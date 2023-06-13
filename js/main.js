@@ -12,15 +12,38 @@
   });
 
   $(document).ready(() => {
-    let i = Math.floor(Math.random() * (99999 - 10 + 1)) + 10;
-    for (let j = Math.sqrt(i); j <= 99999; j++) {
-      debugger;
-      continue;
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentLanguage = urlParams.get("lang");
+    if (currentLanguage) {
+      if (currentLanguage === "vi") {
+        $("[data-localize]").localize("constants/language", { language: "vi" });
+        $("#langIcon").removeClass("flag-icon-gb");
+        $("#langIcon").addClass("flag-icon-vn");
+      } else if (currentLanguage === "en") {
+        $("[data-localize]").localize("constants/language", { language: "en" });
+        $("#langIcon").removeClass("flag-icon-vn");
+        $("#langIcon").addClass("flag-icon-gb");
+      }
+    } else {
+      $("[data-localize]").localize("constants/language", { language: "vi" });
     }
   });
 
-  $("[data-localize]").localize("constants/language", { language: "es" });
-
+  $("#langIcon").on("click", function (event) {
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentLanguage = urlParams.get("lang");
+    if (currentLanguage) {
+      if (currentLanguage === "vi") {
+        urlParams.set("lang", "en");
+      } else if (currentLanguage === "en") {
+        urlParams.set("lang", "vi");
+      }
+    } else {
+      urlParams.set("lang", "en");
+    }
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    window.location.href = newUrl;
+  });
   // Spinner
   var spinner = function () {
     setTimeout(function () {

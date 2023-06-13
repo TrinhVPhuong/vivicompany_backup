@@ -20,7 +20,7 @@
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <!-- Libraries Stylesheet -->
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -55,13 +55,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto py-0">
-            <a href="#home" class="nav-item nav-link active" data-localize="CompanyInfo.Home">Home</a>
-            <a href="#about" class="nav-item nav-link" data-localize="CompanyInfo.About">About</a>
-            <a href="#feature" class="nav-item nav-link" data-localize="CompanyInfo.Feature">Feature</a>
-            <a href="#careers" class="nav-item nav-link" data-localize="CompanyInfo.Careers">Careers</a>
-            <a href="#review" class="nav-item nav-link" data-localize="CompanyInfo.Review">Review</a>
-            <a href="#contact" class="nav-item nav-link" data-localize="CompanyInfo.Contact">Contact</a>
+            <a href="#home" class="nav-item nav-link active" data-localize="Navbar.Home">Home</a>
+            <a href="#about" class="nav-item nav-link" data-localize="Navbar.About">About</a>
+            <a href="#feature" class="nav-item nav-link" data-localize="Navbar.Feature">Feature</a>
+            <a href="#careers" class="nav-item nav-link" data-localize="Navbar.Careers">Careers</a>
+            <a href="#review" class="nav-item nav-link" data-localize="Navbar.Review">Review</a>
+            <a href="#contact" class="nav-item nav-link" data-localize="Navbar.Contact">Contact</a>
           </div>
+          <span id="langIcon" class="btn cursor-pointer flag-icon flag-icon-vn"></span>
           <a href="#careers" class=" btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
             data-localize="Common.JoinUs">Join Us</a>
         </div>
@@ -119,7 +120,7 @@
                   <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
                   <div class="ms-3">
                     <h2 class="mb-0" data-toggle="collapse"> &gt; 200</h2>
-                    <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                    <p class="text-secondary-gradient mb-0" data-localize="About.Reviews">Clients Reviews</p>
                   </div>
                 </div>
               </div>
@@ -137,8 +138,8 @@
     <div class="container-xxl py-5" id="feature">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium">Features</h5>
-          <h1 class="mb-5">Awesome Features</h1>
+          <h5 class="text-primary-gradient fw-medium" data-localize="Features.Title">Features</h5>
+          <h1 class="mb-5" data-localize="Features.Orientation">Awesome Features</h1>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -148,8 +149,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-eye text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT1">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content1">Content</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -159,8 +160,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-layer-group text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT2">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content2">Content</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -170,8 +171,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-edit text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT3">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content3">Content</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -181,8 +182,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-shield-alt text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT4">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content4">Content</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -192,8 +193,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-cloud text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT5">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content5">Content</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -203,8 +204,8 @@
                 style="width: 60px; height: 60px">
                 <i class="fa fa-mobile-alt text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <h5 class="mb-3" data-localize="Features.FeatureT6">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content6">Content</p>
             </div>
           </div>
         </div>
@@ -240,6 +241,7 @@
                         class="fa fa-check text-primary-gradient pt-1"></i></div>
                     <div class="d-flex justify-content-between mb-2"><span data-localize="Careers.Job1.T4">T4</span><i
                         class="fa fa-check text-primary-gradient pt-1"></i></div>
+                    <div class="d-flex justify-content-between mb-2">...</div>
                     <a href="../file/JDSEO.pdf" target="_blank"
                       class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
                       data-localize="Careers.GetDetail">GetDetail</a>
@@ -338,7 +340,7 @@
     <div class="container-xxl py-5" id="contact">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+          <h5 class="text-primary-gradient fw-medium" data-localize="Contact.Title">Contact Us</h5>
           <h1 class="mb-5 contact-submit">Get In Touch!</h1>
         </div>
 
@@ -408,20 +410,22 @@
             <p><i class="fa fa-envelope me-3"></i><a href="mailto:hr@vivimedia.com.vn"><span style="color: #fff;"
                   data-localize="CompanyInfo.HREmail">hr@vivimedia.com.vn</span></a>
             </p>
-            <div class="d-flex pt-2">
+            <!-- <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-6 col-lg-3">
-            <h4 class="text-white mb-4">Quick Link</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Career</a>
+
+          </div>
+          <div class="col-md-6 col-lg-3">
+
+          </div>
+          <div class="col-md-6 col-lg-3 position-relative">
+
+            <img class="position-absolute bottom-0 end-0" src="img/logo.png" alt="Logo">
           </div>
         </div>
       </div>
