@@ -61,8 +61,10 @@
   $(window).scroll(function () {
     if ($(this).scrollTop() > 45) {
       $(".navbar").addClass("sticky-top shadow-sm");
+      $("#navbarLogo").css("display", "block");
     } else {
       $(".navbar").removeClass("sticky-top shadow-sm");
+      $("#navbarLogo").css("display", "none");
     }
   });
 
@@ -75,7 +77,7 @@
         {
           scrollTop: $(this.hash).offset().top - 45,
         },
-        1500,
+        1000,
         "easeInOutExpo"
       );
 

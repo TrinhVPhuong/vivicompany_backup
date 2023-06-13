@@ -22,8 +22,8 @@
     "OurStoryContent": "ViVi Media is a multi-platform digital media company with over 10 years of experience. We focus on producing, creating content and promoting entertainment products on digital platforms. Possessing a team of talented young people, we have been doing our best for a common goal of bringing global audiences different and exciting entertainment experiences.",
     "OurGoal": "Our Goal",
     "OurGoalContent": "Professional and experienced team in the field of media development on digital platforms",
-    "Establish": "Establish",
-    "Reviews": "Clients ratings"
+    "Project": "Successful project",
+    "Reviews": "Partner"
   },
   "Team": {
     "Meetour": "Meet our",
@@ -64,7 +64,7 @@
   "CompanyInfo": {
     "Name": "ViVi Media and Entertainment Joint Stock Company",
     "ShortName": "ViVi Media",
-    "PhoneNumber": "0969.505.091",
+    "PhoneNumber": "(+84) 969.505.091",
     "HREmail": "hr@vivimedia.com.vn",
     "Slogan": "Boost Your YouTube Success with Our Expertise!",
     "Address": "V3, The Terra An Hung, Nguyen Thanh Binh Street, Ha Dong District, Ha Noi City, Vietnam"
@@ -72,5 +72,9 @@
   "Review": {
     "Review": "Review",
     "Content": "What Say Our Clients!"
+  },
+  "Partner": {
+    "Partner": "Partner",
+    "MyPartner": "Our Partner"
   }
 }
