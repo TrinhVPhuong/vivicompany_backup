@@ -19,7 +19,7 @@
     }
   });
 
-  $("[data-localize]").localize("../constants/language", { language: "es" });
+  $("[data-localize]").localize("constants/language", { language: "es" });
 
   // Spinner
   var spinner = function () {
