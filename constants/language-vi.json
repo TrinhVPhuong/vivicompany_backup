@@ -25,6 +25,19 @@
     "Project": "Dự án thành công",
     "Reviews": "Đối tác"
   },
+  "Services": {
+    "Title": "Dịch vụ",
+    "SubTilte1": "Khai Thác Nội&nbspDung&nbspPhái&nbspSinh",
+    "SubTilte2": "Sáng tạo & Sản&nbspxuất&nbspnội&nbspdung",
+    "MusicTitle": "Phát hành & Quảng&nbspbá&nbspâm&nbspnhạc",
+    "MusicDescription": "Chúng tôi xây dựng các hãng nhạc độc lập để hỗ trợ các nghệ sỹ vừa và nhỏ trên Thế giới. Thông qua các nền tảng nghe nhạc trực tuyến (DSPs) như: Spotify, Apple Music, Deezer… chúng tôi mang âm nhạc của các nghệ sỹ đến gần hơn với người yêu nhạc trên toàn thế giới.",
+    "YoutubeTitle": "Nền tảng Youtube",
+    "YoutubeDescription": "Youtube là nền tảng thế mạnh của HG Media. Chúng tôi có nhiều kinh nghiệm triển khai và xây dựng hệ thống kênh bài bản, độc quyền. Bằng sự thấu hiểu nền tảng và hành vi người dùng sâu sắc, chúng tôi đã đạt được nhiều thành công trên thị trường quốc tế.",
+    "TiktokTitle": "Nền tảng Tiktok",
+    "TiktokDescription": "Sự lên ngôi của Tiktok - nền tảng video dạng ngắn đã mở ra một không gian sáng tạo độc đáo là nơi chúng tôi xây dựng hệ thống hỗ trợ truyền thông cho các dự án, đón đầu các xu hướng nội dung mới, sáng tạo và thay đổi từng ngày.",
+    "SocialTitle": "Phát triển nội dung trên nền tảng MXH",
+    "SocialDescription": "Chúng tôi xây dựng cộng đồng tạo sức ảnh hưởng, điều phối các xu hướng giải trí đồng thời kiến tạo các mô hình kiếm tiền dự trên hành vi của người dùng và thuật toán của nền tảng."
+  },
   "Features": {
     "Title": "Mục tiêu",
     "Orientation": "Mục tiêu phát triển",

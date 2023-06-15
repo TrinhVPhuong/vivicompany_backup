@@ -46,13 +46,13 @@ h6,
 
 /** Font face*/
 @font-face {
-  font-family: "iCielBrushUp";
+  font-family: 'iCielBrushUp';
   src: url(../fonts/iCielBrushUp.otf);
 }
 
 /** Text style*/
 .title-focus {
-  font-family: "iCielBrushUp";
+  font-family: 'iCielBrushUp';
   color: var(--primary);
   font-size: 4em;
   line-height: unset;
@@ -61,23 +61,47 @@ h6,
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-secondary-gradient {
-  background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 .bg-secondary-gradient {
-  background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 /***Input***/
@@ -99,7 +123,7 @@ h6,
 .btn.btn-primary-gradient::after,
 .btn.btn-secondary-gradient::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -111,12 +135,20 @@ h6,
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-  background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -157,7 +189,11 @@ h6,
   bottom: 45px;
   z-index: 99;
   border: none;
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 /*** Navbar ***/
@@ -165,7 +201,7 @@ h6,
   position: relative;
   margin-right: 25px;
   padding: 45px 0;
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: var(--light) !important;
@@ -175,7 +211,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   top: -10px;
@@ -237,7 +273,11 @@ h6,
   }
 
   .navbar-light .navbar-brand h1 {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+      to bottom right,
+      var(--primary),
+      var(--secondary)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -266,7 +306,11 @@ h6,
   }
 
   .sticky-top.navbar-light .navbar-brand h1 {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+      to bottom right,
+      var(--primary),
+      var(--secondary)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -276,7 +320,9 @@ h6,
 .hero-header {
   margin-bottom: 4rem;
   padding: 16rem 0 150px 0;
-  background: url(../img/bg-circle.png), url(../img/bg-triangle.png), url(../img/bg-bottom.png), linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    url(../img/bg-bottom.png),
+    linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px top 0px, right 0px top 50%, center bottom;
   background-repeat: no-repeat;
 }
@@ -298,6 +344,20 @@ h6,
   .footerComnanyName {
     right: unset !important;
   }
+}
+
+/* Services */
+
+#service .service__sub-image img {
+  width: 80px;
+  height: 80px;
+}
+
+.service__green {
+  background-color: #047a4a;
+}
+.service__red {
+  background-color: #d9202a;
 }
 
 /*** Feature ***/
@@ -363,7 +423,11 @@ h6,
 
 .careers .nav-link.active {
   color: #ffffff;
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 /*** Screenshot ***/
@@ -411,14 +475,18 @@ h6,
   margin: 5px 0;
   width: 15px;
   height: 15px;
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
   border-radius: 15px;
   transition: 0.5s;
 }
 
 .screenshot-carousel .owl-dot::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 5px;
   height: 5px;
   top: 5px;
@@ -439,7 +507,11 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item h5,
@@ -462,7 +534,11 @@ h6,
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
   border-radius: 60px;
   font-size: 18px;
   transition: 0.5s;
@@ -470,14 +546,20 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-  background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
 }
 
 /*** Footer ***/
 .footer {
   margin-top: 6rem;
   padding-top: 9rem;
-  background: url(../img/bg-circle.png), url(../img/bg-triangle.png), url(../img/bg-top.png), linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    url(../img/bg-top.png),
+    linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
 }
@@ -511,8 +593,8 @@ h6,
 
 .footer .btn.btn-link::before {
   position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   margin-right: 10px;
 }
@@ -552,7 +634,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
