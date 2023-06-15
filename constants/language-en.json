@@ -45,6 +45,19 @@
       "T4": "Bonuses for holidays and New Year"
     }
   },
+  "Services": {
+    "Title": "Services",
+    "SubTilte1": "Exploit Derivative&nbspContent",
+    "SubTilte2": "Creative & Content&nbspproduction",
+    "MusicTitle": "Release & Music&nbsppromotion",
+    "MusicDescription": "We build independent music labels to support small and medium artists around the world. Through online music platforms (DSPs) such as: Spotify, Apple Music, Deezer… we bring artists' music closer to music lovers around the world.",
+    "YoutubeTitle": "Youtube Platform",
+    "YoutubeDescription": "Youtube is the strong platform of HG Media. We have a lot of experience in deploying and building a methodical and exclusive channel system. With a deep understanding of the platform and user behavior, we have achieved many successes in the international market.",
+    "TiktokTitle": "Tiktok Platform",
+    "TiktokDescription": "The rise of Tiktok - a short-form video platform has opened up a unique creative space where we build a communication support system for projects, anticipate new, creative and innovative content trends. change every day.",
+    "SocialTitle": "Content development on the socical platform",
+    "SocialDescription": "We build communities of influence, coordinate entertainment trends, and create monetization models based on user behavior and the platform's algorithms."
+  },
   "Features": {
     "Title": "Objectives",
     "Orientation": "Development Objectives",

@@ -62,9 +62,13 @@ h6,
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,9 +76,13 @@ h6,
 
 .text-secondary-gradient {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--secondary),
+   
     var(--primary)
+  
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,9 +90,13 @@ h6,
 
 .bg-primary-gradient {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
 }
 
@@ -94,6 +106,14 @@ h6,
     var(--secondary),
     var(--primary)
   );
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 /***Input***/
@@ -128,18 +148,26 @@ h6,
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--secondary),
+   
     var(--primary)
+  
   );
 }
 
@@ -182,9 +210,13 @@ h6,
   z-index: 99;
   border: none;
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
 }
 
@@ -266,9 +298,13 @@ h6,
 
   .navbar-light .navbar-brand h1 {
     background: linear-gradient(
+      
       to bottom right,
+     
       var(--primary),
+     
       var(--secondary)
+    
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -299,9 +335,13 @@ h6,
 
   .sticky-top.navbar-light .navbar-brand h1 {
     background: linear-gradient(
+      
       to bottom right,
+     
       var(--primary),
+     
       var(--secondary)
+    
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -313,7 +353,9 @@ h6,
   margin-bottom: 4rem;
   padding: 16rem 0 150px 0;
   background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+   
     url(../img/bg-bottom.png),
+   
     linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px top 0px, right 0px top 50%, center bottom;
   background-repeat: no-repeat;
@@ -338,12 +380,27 @@ h6,
   }
 }
 
+/* Services */
+
+#service .service__sub-image img {
+  width: 80px;
+  height: 80px;
+}
+
+.service__green {
+  background-color: #047a4a;
+}
+.service__red {
+  background-color: #d9202a;
+}
+
 /*** Feature ***/
 .feature-item {
   position: relative;
   transition: 0.5s;
   z-index: 1;
   height: 100%;
+  cursor: pointer;
 }
 
 .feature-item__image {
@@ -378,6 +435,10 @@ h6,
   top: 0px;
 }
 
+.feature-item:hover .feature-item__icon {
+  top: 0px;
+}
+
 /*** Careers ***/
 .careers .nav {
   padding: 2px;
@@ -401,9 +462,13 @@ h6,
 .careers .nav-link.active {
   color: #ffffff;
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
 }
 
@@ -453,9 +518,13 @@ h6,
   width: 15px;
   height: 15px;
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
   border-radius: 15px;
   transition: 0.5s;
@@ -485,9 +554,13 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-item {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
 }
 
@@ -512,9 +585,13 @@ h6,
   justify-content: center;
   color: #ffffff;
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--primary),
+   
     var(--secondary)
+  
   );
   border-radius: 60px;
   font-size: 18px;
@@ -524,9 +601,13 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
   background: linear-gradient(
+    
     to bottom right,
+   
     var(--secondary),
+   
     var(--primary)
+  
   );
 }
 
@@ -535,7 +616,9 @@ h6,
   margin-top: 6rem;
   padding-top: 9rem;
   background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+   
     url(../img/bg-top.png),
+   
     linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
@@ -620,6 +703,6 @@ input[type='number'] {
 }
 .partner-logo {
   width: max-content;
-  height: 150px;
+  height: 120px;
   object-fit: scale-down;
 }
