@@ -1,0 +1,83 @@
+{
+  "Common": {
+    "Address": "Địa chỉ",
+    "JoinUs": "Join Us",
+    "ContactUs": "Contact Us"
+  },
+  "Header": {
+    "Welcome": "Chào mừng đến với Công ty cổ phần truyền thông và giải trí ViVi"
+  },
+  "Navbar": {
+    "Home": "Trang chủ",
+    "About": "Giới thiệu",
+    "Team": "Đội ngũ",
+    "Feature": "Mục tiêu",
+    "Careers": "Tuyển dụng",
+    "Contact": "Liên hệ"
+  },
+  "About": {
+    "LearnMore": "Tìm hiểu thêm",
+    "AboutUs": "Về chúng tôi",
+    "OurStory": "Chuyện của chúng tôi",
+    "OurStoryContent": "ViVi Media là công ty truyền thông số đa nền tảng với bề dày hơn 10 năm kinh nghiệm. Chúng tôi tập trung vào sản xuất, sáng tạo nội dung và quảng bá các sản phẩm giải trí trên nền tảng số. Sở hữu đội ngũ nhân sự trẻ tài năng, chúng tôi đã và đang nỗ lực hết mình vì một mục tiêu chung là mang đến cho khán giả toàn cầu những trải nghiệm giải trí khác biệt và thú vị.",
+    "OurGoal": "Mục tiêu của chúng tôi",
+    "OurGoalContent": "Đội ngũ chuyên nghiệp, giàu kinh nghiệm trong lĩnh vực phát triển truyền thông trên các nền tảng số",
+    "Project": "Dự án thành công",
+    "Reviews": "Đối tác"
+  },
+  "Features": {
+    "Title": "Mục tiêu",
+    "Orientation": "Mục tiêu phát triển",
+    "FeatureT1": "Các hoạt động định hướng của công ty",
+    "Content1": "Định hướng sáng tạo, âm nhạc độc đáo và chất lượng cao.",
+    "FeatureT2": "Sở hữu hãng nhạc riêng",
+    "Content2": "Gắn kết cùng hãng nhạc riêng, tạo sự độc đáo và đa dạng.",
+    "FeatureT3": "Xây dựng thêm những nguồn nhạc chất lượng",
+    "Content3": "Mở rộng nguồn nhạc chất lượng, mang đến trải nghiệm tuyệt vời.",
+    "FeatureT4": "Hợp tác thêm với đối tác âm nhạc có tầm ảnh hưởng",
+    "Content4": "Hợp tác với các đối tác âm nhạc có tầm ảnh hưởng, xây dựng sự thành công.",
+    "FeatureT5": "Đào tạo và mở rộng thêm nhân viên tiềm năng",
+    "Content5": "Đào tạo nhân viên tiềm năng, tạo đội ngũ chuyên nghiệp.",
+    "FeatureT6": "Mang lại giá trị cho xã hội",
+    "Content6": "Tạo giá trị cho xã hội qua âm nhạc và nghệ thuật."
+  },
+  "Team": {
+    "Meetour": "Gặp gỡ",
+    "Team": "Đội ngũ của chúng tôi"
+  },
+  "Service": {
+    "Service": "Dịch vụ"
+  },
+  "Careers": {
+    "CareersPlan": "Tuyển dụng",
+    "Content": "Gia nhập với chúng tôi",
+    "Upto": "Lên tới",
+    "Month": "/ Tháng",
+    "GetDetail": "Xem chi tiết",
+    "Job1": {
+      "T1": "Thời gian thử việc 1 tháng với 80% mức lương cơ bản",
+      "T2": "Teambuilding; Tiệc định kỳ...",
+      "T3": "Đào tạo",
+      "T4": "Tiền thưởng cho các ngày lễ và Tết"
+    }
+  },
+  "Contact": {
+    "Title": "Liên hệ chúng tôi"
+  },
+  "CompanyInfo": {
+    "Name": "Công ty cổ phần truyền thông và giải trí ViVi",
+    "ShortName": "ViVi Media",
+    "PhoneNumber": "(+84) 969.505.091",
+    "HREmail": "hr@vivimedia.com.vn",
+    "Slogan": "Nâng cao thành công YouTube của bạn với sự am hiểu của chúng tôi!",
+    "Address": "Tòa nhà V3, The Terra An Hưng, Đường Nguyễn Thanh Bình, Quận Hà Đông, Thành phố Hà Nội, Việt Nam"
+  },
+  "Review": {
+    "Review": "Đánh giá",
+    "Content": "Nhận xét của khách hàng!"
+  },
+  "Partner": {
+    "Partner": "Đối tác",
+    "MyPartner": "Đối tác của chúng tôi"
+  }
+}

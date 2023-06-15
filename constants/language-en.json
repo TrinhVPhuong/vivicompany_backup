@@ -1,0 +1,80 @@
+{
+  "Common": {
+    "Address": "Address",
+    "JoinUs": "Join Us",
+    "ContactUs": "Contact Us"
+  },
+  "Header": {
+    "Welcome": "Welcome to ViVi Media and Entertainment Joint Stock Company"
+  },
+  "Navbar": {
+    "Home": "Home",
+    "About": "About",
+    "Team": "Team",
+    "Feature": "Target",
+    "Careers": "Careers",
+    "Contact": "Contact"
+  },
+  "About": {
+    "LearnMore": "Learn more",
+    "AboutUs": "About Us",
+    "OurStory": "Our Story",
+    "OurStoryContent": "ViVi Media is a multi-platform digital media company with over 10 years of experience. We focus on producing, creating content and promoting entertainment products on digital platforms. Possessing a team of talented young people, we have been doing our best for a common goal of bringing global audiences different and exciting entertainment experiences.",
+    "OurGoal": "Our Goal",
+    "OurGoalContent": "Professional and experienced team in the field of media development on digital platforms",
+    "Project": "Successful project",
+    "Reviews": "Partner"
+  },
+  "Team": {
+    "Meetour": "Meet our",
+    "Team": "Team"
+  },
+  "Service": {
+    "Service": "Service"
+  },
+  "Careers": {
+    "CareersPlan": "Careers Plan",
+    "Content": "Join With Us",
+    "Upto": "Up to",
+    "Month": "/ Month",
+    "GetDetail": "Get Detail",
+    "Job1": {
+      "T1": "Probation for 1 month with 80% of basic salary",
+      "T2": "Teambuilding; Regular party...",
+      "T3": "Traning",
+      "T4": "Bonuses for holidays and New Year"
+    }
+  },
+  "Features": {
+    "Title": "Objectives",
+    "Orientation": "Development Objectives",
+    "FeatureT1": "Company's Guiding Activities",
+    "Content1": "Creative orientation, unique and high-quality music.",
+    "FeatureT2": "Own Music Label",
+    "Content2": "Collaborating with our own music label for uniqueness and diversity.",
+    "FeatureT3": "Building High-Quality Music Sources",
+    "Content3": "Expanding high-quality music sources for exceptional experiences.",
+    "FeatureT4": "Collaboration with Influential Music Partners",
+    "Content4": "Collaborating with influential music partners to achieve success.",
+    "FeatureT5": "Training and Expanding Talented Staff",
+    "Content5": "Training potential employees to build a professional team.",
+    "FeatureT6": "Creating Value for Society",
+    "Content6": "Creating value for society through music and art."
+  },
+  "CompanyInfo": {
+    "Name": "ViVi Media and Entertainment Joint Stock Company",
+    "ShortName": "ViVi Media",
+    "PhoneNumber": "(+84) 969.505.091",
+    "HREmail": "hr@vivimedia.com.vn",
+    "Slogan": "Boost Your YouTube Success with Our Expertise!",
+    "Address": "V3, The Terra An Hung, Nguyen Thanh Binh Street, Ha Dong District, Ha Noi City, Vietnam"
+  },
+  "Review": {
+    "Review": "Review",
+    "Content": "What Say Our Clients!"
+  },
+  "Partner": {
+    "Partner": "Partner",
+    "MyPartner": "Our Partner"
+  }
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>ViVi Media Company</title>
+  <title>ViVi Media</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -20,7 +20,7 @@
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <!-- Libraries Stylesheet -->
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -46,8 +46,9 @@
     <!-- Navbar & Hero Start -->
     <div class="container-xxl position-relative p-0" id="home">
       <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="" class="navbar-brand p-0">
-          <h1 class="m-0" data-localize="CompanyInfo.ShortName">ViVi Media</h1>
+        <a href="" class="navbar-brand p-0 d-flex justify-content-center align-items-center">
+          <img id="navbarLogo" src="img/logo.png" alt="Logo">
+          <h1 class="m-0" data-localize="CompanyInfo.ShortName" style="font-size: 24px;">ViVi Media</h1>
           <!-- <img src="img/logo.png" alt="Logo"> -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,13 +56,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto py-0">
-            <a href="#home" class="nav-item nav-link active" data-localize="CompanyInfo.Home">Home</a>
-            <a href="#about" class="nav-item nav-link" data-localize="CompanyInfo.About">About</a>
-            <a href="#feature" class="nav-item nav-link" data-localize="CompanyInfo.Feature">Feature</a>
-            <a href="#careers" class="nav-item nav-link" data-localize="CompanyInfo.Careers">Careers</a>
-            <a href="#review" class="nav-item nav-link" data-localize="CompanyInfo.Review">Review</a>
-            <a href="#contact" class="nav-item nav-link" data-localize="CompanyInfo.Contact">Contact</a>
+            <a href="#home" class="nav-item nav-link active" data-localize="Navbar.Home">Home</a>
+            <a href="#about" class="nav-item nav-link" data-localize="Navbar.About">About</a>
+            <a href="#feature" class="nav-item nav-link" data-localize="Navbar.Feature">Feature</a>
+            <a href="#careers" class="nav-item nav-link" data-localize="Navbar.Careers">Careers</a>
+            <a href="#review" class="nav-item nav-link" data-localize="Navbar.Review">Review</a>
+            <a href="#contact" class="nav-item nav-link" data-localize="Navbar.Contact">Contact</a>
           </div>
+          <span id="langIcon" class="btn cursor-pointer flag-icon flag-icon-vn"></span>
           <a href="#careers" class=" btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
             data-localize="Common.JoinUs">Join Us</a>
         </div>
@@ -80,16 +82,6 @@
                 data-localize="Common.ContactUs">Contact
                 Us</a>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-              data-wow-delay="0.3s">
-              <div class="owl-carousel screenshot-carousel">
-                <img class="img-fluid" src="img/screenshot-1.png" alt="" />
-                <img class="img-fluid" src="img/screenshot-2.png" alt="" />
-                <img class="img-fluid" src="img/screenshot-3.png" alt="" />
-                <img class="img-fluid" src="img/screenshot-4.png" alt="" />
-                <img class="img-fluid" src="img/screenshot-5.png" alt="" />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -101,33 +93,49 @@
       <div class="container py-5 px-lg-5">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium" data-localize="About.AboutUs">About Us</h5>
-            <h1 class="mb-4" data-localize="About.OurGoalContent">OurGoalContent</h1>
+            <h1 class="fw-medium title-focus" data-localize="About.AboutUs">About Us</h1>
+            <h2 class="mb-4" data-localize="About.OurGoalContent">OurGoalContent</h2>
             <p class="mb-4" data-localize="About.OurStoryContent">OurStoryContent</p>
             <div class="row g-4 mb-4">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="d-flex">
-                  <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
-                  <div class="ms-3">
-                    <h2 class="mb-0" data-toggle="collapse">2022</h2>
-                    <p class="text-primary-gradient mb-0" data-localize="About.Establish">Establish</p>
-                  </div>
-                </div>
-              </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                 <div class="d-flex">
                   <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
                   <div class="ms-3">
-                    <h2 class="mb-0" data-toggle="collapse"> &gt; 200</h2>
-                    <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                    <div class="d-flex">
+                      <h2 class="mb-0" data-toggle="counter-up">200</h2>
+                      <h2>+</h2>
+                    </div>
+                    <p class="text-secondary-gradient mb-0" data-localize="About.Reviews">Clients Reviews</p>
                   </div>
                 </div>
               </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="d-flex">
+                  <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                  <div class="ms-3">
+                    <div class="d-flex">
+                      <h2 class="mb-0" data-toggle="counter-up">20</h2>
+                      <h2>+</span>
+                    </div>
+
+                    <p class="text-primary-gradient mb-0" data-localize="About.Project">Project</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="col-lg-6">
-            <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png" />
+          <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+            <div class="owl-carousel screenshot-carousel">
+              <img class="img-fluid" src="img/screenshot-1.jpg" alt="" />
+              <img class="img-fluid" src="img/screenshot-2.jpg" alt="" />
+              <img class="img-fluid" src="img/screenshot-3.jpg" alt="" />
+              <img class="img-fluid" src="img/screenshot-4.jpg" alt="" />
+            </div>
           </div>
+          <!-- <div class="col-lg-6">
+            <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png" />
+          </div> -->
         </div>
       </div>
     </div>
@@ -137,74 +145,102 @@
     <div class="container-xxl py-5" id="feature">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium">Features</h5>
-          <h1 class="mb-5">Awesome Features</h1>
+          <h1 class="fw-medium title-focus" data-localize="Features.Title">Features</h1>
+          <h2 class="mb-5" data-localize="Features.Orientation">Awesome Features</h2>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
                 <i class="fa fa-eye text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-1.jpg" alt="feature-1">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT1">SEO Content</h5>
+                <p class="m-0" data-localize="Features.Content1">Content</p>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
-                <i class="fa fa-layer-group text-white fs-4"></i>
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
+                <i class="fa fa-building text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-2.jpg" alt="feature-2">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT2">SEO Content</h5>
+                <p class="m-0" data-localize="Features.Content2">Content</p>
+              </div>
+              
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
-                <i class="fa fa-edit text-white fs-4"></i>
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
+                <i class="fa fa-music text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-3.jpg" alt="feature-3">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT3">SEO Content</h5>
+                <p class="m-0" data-localize="Features.Content3">Content</p>
+              </div>
+             
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
-                <i class="fa fa-shield-alt text-white fs-4"></i>
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
+                <i class="fa fa-handshake text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-4.jpg" alt="feature-4">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT4">SEO Content</h5>
+              <p class="m-0" data-localize="Features.Content4">Content</p>
+              </div>
+              
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
-                <i class="fa fa-cloud text-white fs-4"></i>
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
+                <i class="fa fa-users text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-5.jpg" alt="feature-5">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT5">SEO Content</h5>
+                <p class="m-0" data-localize="Features.Content5">Content</p>
+              </div>
+              
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="feature-item bg-light rounded p-4">
-              <div
-                class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                style="width: 60px; height: 60px">
-                <i class="fa fa-mobile-alt text-white fs-4"></i>
+            <div class="feature-item bg-light rounded d-flex flex-column overflow-hidden gap-8">
+              <div class="feature-item__icon d-inline-flex align-items-center justify-content-center bg-primary-gradient p-2">
+                <i class="fas fa-chart-line text-white fs-4"></i>
               </div>
-              <h5 class="mb-3">SEO Content</h5>
-              <p class="m-0">Content</p>
+              <div
+                class="feature-item__image d-inline-flex align-items-center justify-content-center bg-primary-gradient">
+                <img class="img-fluid" src="./img/feature-6.jpg" alt="feature-6">
+              </div>
+              <div class="d-flex gap-2 flex-column p-4">
+                <h5 class="feature-item__title" data-localize="Features.FeatureT6">SEO Content</h5>
+                <p class="m-0" data-localize="Features.Content6">Content</p>
+              </div>
             </div>
           </div>
         </div>
@@ -216,8 +252,8 @@
     <div class="container-xxl py-5" id="careers">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium" data-localize="Careers.CareersPlan">CareersPlan</h5>
-          <h1 class="mb-5" data-localize="Careers.Content">Content</h1>
+          <h1 class="fw-medium title-focus" data-localize="Careers.CareersPlan">CareersPlan</h1>
+          <h2 class="mb-5" data-localize="Careers.Content">Content</h2>
         </div>
         <div class="tab-class text-center careers wow fadeInUp" data-wow-delay="0.1s">
           <div class="tab-content text-start">
@@ -240,8 +276,12 @@
                         class="fa fa-check text-primary-gradient pt-1"></i></div>
                     <div class="d-flex justify-content-between mb-2"><span data-localize="Careers.Job1.T4">T4</span><i
                         class="fa fa-check text-primary-gradient pt-1"></i></div>
-                    <a href="../file/JDSEO.pdf" target="_blank"
+                    <div class="d-flex justify-content-between mb-2">...</div>
+                    <!-- <a href="../file/JDSEO.pdf" target="_blank"
                       class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                      data-localize="Careers.GetDetail">GetDetail</a> -->
+                    <a href="https://drive.google.com/file/d/1mjhB_Yt9F7XcJeK0pD3b52oDWcoeGTnf/view?usp=drive_link"
+                      target="_blank" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
                       data-localize="Careers.GetDetail">GetDetail</a>
                   </div>
                 </div>
@@ -252,13 +292,52 @@
       </div>
     </div>
     <!-- Careers End -->
+    <!-- Partner Start -->
+    <div class="container-xxl py-5" id="partner">
+      <div class="container py-5 px-lg-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="fw-medium title-focus" data-localize="Partner.Partner">Features</h1>
+          <h2 class="mb-5" data-localize="Partner.MyPartner">Awesome Features</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <img class="partner-logo w-100" src="img/partner/3f074b01002bd175883a1.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <img class="partner-logo w-100" src="img/partner/8fb9f7b5bc9f6dc1348e5.png">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <img class="partner-logo w-100" src="img/partner/68f012fc59d68888d1c76.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <img class="partner-logo w-100" src="img/partner/375a4c51077bd6258f6a2.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <img class="partner-logo w-100" src="img/partner/706e00654b4f9a11c35e8.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <img class="partner-logo w-100" src="img/partner/56803f8b74a1a5fffcb04.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <img class="partner-logo w-100" src="img/partner/c7c6b3caf8e029be70f17.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <img class="partner-logo w-100" src="img/partner/d180a38be8a139ff60b03.jpg">
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <img class="partner-logo w-100" src="img/partner/6f4116657d4fac11f55e.png">
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Partner End -->
     <!-- Review Start -->
     <div class="container-xxl py-5" id="review">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium" data-localize="Review.Review">Review</h5>
-          <h1 class="mb-5" data-localize="Review.Content">Content</h1>
+          <h1 class="fw-medium title-focus" data-localize="Review.Review">Review</h1>
+          <h2 class="mb-5" data-localize="Review.Content">Content</h2>
         </div>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
           <div class="testimonial-item rounded p-4">
@@ -332,14 +411,16 @@
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Review End -->
+
+
 
     <!-- Contact Start -->
     <div class="container-xxl py-5" id="contact">
       <div class="container py-5 px-lg-5">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
-          <h1 class="mb-5 contact-submit">Get In Touch!</h1>
+          <h1 class="fw-medium title-focus" data-localize="Contact.Title">Contact Us</h1>
+          <h2 class="mb-5 contact-submit">Get In Touch!</h2>
         </div>
 
         <div class="row justify-content-center">
@@ -404,24 +485,27 @@
             <p><i class="fa fa-map-marker-alt me-3"></i><span data-localize="CompanyInfo.Address">ViVi Media and
                 Entertainment Joint Stock Company</span>
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i><span data-localize="CompanyInfo.PhoneNumber">0969.505.091</span></p>
+            <p><i class="fa fa-phone-alt me-3"></i><span data-localize="CompanyInfo.PhoneNumber">(+84)
+                969.505.091</span></p>
             <p><i class="fa fa-envelope me-3"></i><a href="mailto:hr@vivimedia.com.vn"><span style="color: #fff;"
                   data-localize="CompanyInfo.HREmail">hr@vivimedia.com.vn</span></a>
             </p>
-            <div class="d-flex pt-2">
+            <!-- <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-6 col-lg-3">
-            <h4 class="text-white mb-4">Quick Link</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Career</a>
+
+          </div>
+          <div class="col-md-6 col-lg-3">
+
+          </div>
+          <div class="col-md-6 col-lg-3 position-relative">
+            <h1 id="footerComnanyName" class="position-absolute bottom-0 end-0 m-0" style="color: #ffffff;"
+              data-localize="CompanyInfo.ShortName">ViVi Media</h1>
           </div>
         </div>
       </div>

@@ -1,21 +1,49 @@
 (function ($) {
   "use strict";
   //Anti Debug
-  // $(document).keydown(function (event) {
-  //   if (event.keyCode == 123) {
-  //     // Prevent F12
-  //     return false;
-  //   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-  //     // Prevent Ctrl+Shift+I
-  //     return false;
-  //   }
-  // });
-  // $(document).on("contextmenu", function (e) {
-  //   e.preventDefault();
-  // });
+  $(document).keydown(function (event) {
+    if (event.keyCode == 123) {
+      // Prevent F12
+      return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+      // Prevent Ctrl+Shift+I
+      return false;
+    }
+  });
 
-  $("[data-localize]").localize("constants/language", { language: "es" });
+  $(document).ready(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentLanguage = urlParams.get("lang");
+    if (currentLanguage) {
+      if (currentLanguage === "vi") {
+        $("[data-localize]").localize("constants/language", { language: "vi" });
+        $("#langIcon").removeClass("flag-icon-gb");
+        $("#langIcon").addClass("flag-icon-vn");
+      } else if (currentLanguage === "en") {
+        $("[data-localize]").localize("constants/language", { language: "en" });
+        $("#langIcon").removeClass("flag-icon-vn");
+        $("#langIcon").addClass("flag-icon-gb");
+      }
+    } else {
+      $("[data-localize]").localize("constants/language", { language: "vi" });
+    }
+  });
 
+  $("#langIcon").on("click", function (event) {
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentLanguage = urlParams.get("lang");
+    if (currentLanguage) {
+      if (currentLanguage === "vi") {
+        urlParams.set("lang", "en");
+      } else if (currentLanguage === "en") {
+        urlParams.set("lang", "vi");
+      }
+    } else {
+      urlParams.set("lang", "en");
+    }
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    window.location.href = newUrl;
+  });
   // Spinner
   var spinner = function () {
     setTimeout(function () {
@@ -33,8 +61,10 @@
   $(window).scroll(function () {
     if ($(this).scrollTop() > 45) {
       $(".navbar").addClass("sticky-top shadow-sm");
+      $("#navbarLogo").css("display", "block");
     } else {
       $(".navbar").removeClass("sticky-top shadow-sm");
+      $("#navbarLogo").css("display", "none");
     }
   });
 
@@ -47,7 +77,7 @@
         {
           scrollTop: $(this.hash).offset().top - 45,
         },
-        1500,
+        1000,
         "easeInOutExpo"
       );
 
